@@ -1,19 +1,6 @@
 
-    <div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash'); ?>"></div>
-    <?php if ($this->session->flashdata('flash')) : ?>
-    <!-- <div class="row mt-3">
-        <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data Barang <strong>berhasil</strong> <?= $this->session->flashdata('flash'); ?>.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
-    </div> -->
-    <?php endif; ?>
+<div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash'); ?>"></div>
 
-<div style=" background: #060606; padding: 40px 0px;"><br></div>
     <!-- Start All Title Box -->
     <div class="all-title-box">
         <div class="container">
@@ -35,14 +22,14 @@
                     <div class="title-all text-center">
                         <br>
                         <h1>SELAMAT DATANG MASTER</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
+                        <p>Halaman ini terdapat fitur CRUD Untuk Kelola Barang</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="special-menu text-center">
-                            <a class="btn hvr-hover" href="<?= base_url('admin/tambah')?>"><h1 style="color: white; padding: 5px;">Tambah Barang Baru</h1></a>
+                            <a class="btn btn-dark" href="<?= base_url('admin/tambah')?>">Tambah Barang Baru</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +40,7 @@
                 <div class="input-group mb-0 ">
                   <input type="text" class="form-control" placeholder="Cari Data Barang" name="keyword">
                   <div class="input-group-append">
-                  <button class="btn hvr-hover" type="submit"><h1 style="color: white; padding: 0px;">Search</h1></button>
+                  <button class="btn btn-dark" type="submit">Search</button>
                   </div>
                 </div>
             </form>
@@ -101,29 +88,35 @@
                                     </td>
                                         
                                      <td class="price-pr">
+                                        <img width="80" src="<?= base_url('assets/')?>img/barang/<?= $key['image']?>">
                                         <p><?= $key['image'] ?></p>
                                     </td>
                                     <td class="total-pr">
                                         <p><?= $key['deskripsi_barang'] ?></p>
                                     </td>
                                     <td class="remove-pr">
-                                    <a href="<?= base_url('admin/edit')?>/<?=$key['id']?>"><i class="fas fa-plus"></i></a>
-                                    <a href="<?= base_url('admin/hapus')?>/<?=$key['id']?>"><i class="fas fa-times"></i></a>
+                                    <a href="<?= base_url('admin/edit')?>/<?=$key['id_barang']?>"><i class="fas fa-plus"></i></a>
+                                    <a href="<?= base_url('admin/hapus')?>/<?=$key['id_barang']?>" class="tombol-hapus"><i class="fas fa-times "></i></a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
-                            
 
                             </tbody>
+
                         </table>
-                    </div>
-                </div>
-            </div>
+
             <?php if(empty($barang) ) : ?>
                 <div class="alert alert-danger" role="alert">
                  Data Barang Tidak ditemukan
                 </div>
             <?php endif; ?>
-        
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
+        </div>
+
+    </div>
+    

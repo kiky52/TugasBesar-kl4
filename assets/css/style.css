@@ -148,7 +148,6 @@
 }
 /*------------------------------------------------------------------ HEADER -------------------------------------------------------------------*/
  .main-top{
-     background: #000000;
      padding: 10px 0px;
 }
  .custom-select-box{
@@ -934,7 +933,8 @@
 }
  .why-text{
      background: #f5f5f5;
-     padding: 15px;
+     padding: 20px;
+     margin-bottom: 30px;
 }
  .why-text h4{
      font-size: 16px;
@@ -1096,6 +1096,7 @@
 }
  .title-blog{
      padding: 40px 30px 40px 30px;
+     height: 300px; 
 }
  .title-blog h3{
      font-size: 20px;
@@ -1177,7 +1178,7 @@
  .main-instagram.owl-carousel .owl-nav button.owl-prev{
      background: #000000;
      position: absolute;
-     z-index: 1;
+     
      display: block;
      height: 100%;
      width: 50px;
@@ -1197,7 +1198,7 @@
  .main-instagram.owl-carousel .owl-nav button.owl-next{
      background: #000000;
      position: absolute;
-     z-index: 1;
+     
      display: block;
      height: 100%;
      width: 50px;
@@ -2455,7 +2456,6 @@
  .carousel-indicators{
      position: relative;
      bottom: 0;
-     background: #000000;
 }
  .carousel-indicators li{
      width: 30%;

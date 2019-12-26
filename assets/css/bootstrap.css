@@ -477,8 +477,8 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 300px;
 }
 
 .img-thumbnail {
@@ -4058,6 +4058,7 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  
 }
 
 .nav-link {
@@ -4519,6 +4520,7 @@ input[type="button"].btn-block {
 
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
+
 }
 
 .navbar-dark .navbar-nav .show > .nav-link,
@@ -4526,6 +4528,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
+
 }
 
 .navbar-dark .navbar-toggler {
@@ -5739,7 +5742,7 @@ a.close.disabled {
 
 .modal-dialog {
   position: relative;
-  width: auto;
+  width: 1110px;
   margin: 0.5rem;
   pointer-events: none;
 }
@@ -6578,7 +6581,8 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  /*background-color: #343a40 !important;*/
+  background-color: black !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
